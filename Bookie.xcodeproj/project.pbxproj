@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		60AA058526C68933005B2A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058426C68933005B2A74 /* AppDelegate.swift */; };
 		60AA058726C68933005B2A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058626C68933005B2A74 /* SceneDelegate.swift */; };
-		60AA058926C68933005B2A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058826C68933005B2A74 /* ViewController.swift */; };
+		60AA058926C68933005B2A74 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058826C68933005B2A74 /* WelcomeViewController.swift */; };
 		60AA058C26C68933005B2A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AA058A26C68933005B2A74 /* Main.storyboard */; };
 		60AA058E26C68935005B2A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AA058D26C68935005B2A74 /* Assets.xcassets */; };
 		60AA059126C68935005B2A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AA058F26C68935005B2A74 /* LaunchScreen.storyboard */; };
-		60AA059C26C68935005B2A74 /* BookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA059B26C68935005B2A74 /* BookieTests.swift */; };
-		60AA05A726C68935005B2A74 /* BookieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA05A626C68935005B2A74 /* BookieUITests.swift */; };
+		60AA05B526C6894E005B2A74 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA05B426C6894E005B2A74 /* Session.swift */; };
+		60C5538026DFB1960056BA51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C5537F26DFB1960056BA51 /* GoogleService-Info.plist */; };
+		60C5538526E234EA0056BA51 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5538426E234EA0056BA51 /* SignInViewController.swift */; };
+		60C5538726E234F10056BA51 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5538626E234F10056BA51 /* SignUpViewController.swift */; };
+		60C5538926E2351D0056BA51 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5538826E2351D0056BA51 /* ForgotPasswordViewController.swift */; };
+		60C5538B26E2359F0056BA51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5538A26E2359F0056BA51 /* Constants.swift */; };
+		60C5538D26E236640056BA51 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5538C26E236630056BA51 /* Alert.swift */; };
+		60C5539126E245B40056BA51 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5539026E245B40056BA51 /* HomeViewController.swift */; };
+		60C5539526E247370056BA51 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5539426E247370056BA51 /* SettingsViewController.swift */; };
+		60C5539B26E267DA0056BA51 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5539A26E267DA0056BA51 /* ChangePasswordViewController.swift */; };
+		60C5539D26E267E00056BA51 /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5539C26E267E00056BA51 /* ChangeUsernameViewController.swift */; };
+		60C5539F26E2E5870056BA51 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5539E26E2E5870056BA51 /* BookData.swift */; };
+		60C553A126E2ED2A0056BA51 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553A026E2ED2A0056BA51 /* BookManager.swift */; };
+		60C553A426E3A57E0056BA51 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553A226E3A57E0056BA51 /* BookCell.swift */; };
+		60C553EB26E43A820056BA51 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C553E926E43A820056BA51 /* BookCell.xib */; };
+		60C553ED26E44A0E0056BA51 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553EC26E44A0E0056BA51 /* ApiKey.swift */; };
+		60C553EF26E4514D0056BA51 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553EE26E4514D0056BA51 /* Book.swift */; };
+		60C553F326E825160056BA51 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553F226E825160056BA51 /* LibraryViewController.swift */; };
+		60C553F526E96D510056BA51 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553F426E96D510056BA51 /* BookDetailViewController.swift */; };
+		60C553F726EA9B780056BA51 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C553F626EA9B780056BA51 /* ListDetailViewController.swift */; };
+		79D245C3C59D2A57595EBD69 /* Pods_Bookie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94521FE85F23DBB8B5D40E4F /* Pods_Bookie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +54,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA7771B9E37A5BB1C40EABD /* Pods-Bookie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookie.release.xcconfig"; path = "Target Support Files/Pods-Bookie/Pods-Bookie.release.xcconfig"; sourceTree = "<group>"; };
 		60AA058126C68933005B2A74 /* Bookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA058426C68933005B2A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AA058626C68933005B2A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60AA058826C68933005B2A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60AA058826C68933005B2A74 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		60AA058B26C68933005B2A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60AA058D26C68935005B2A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60AA059026C68935005B2A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60AA059226C68935005B2A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AA059726C68935005B2A74 /* BookieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60AA059B26C68935005B2A74 /* BookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieTests.swift; sourceTree = "<group>"; };
-		60AA059D26C68935005B2A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AA05A226C68935005B2A74 /* BookieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60AA05A626C68935005B2A74 /* BookieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieUITests.swift; sourceTree = "<group>"; };
-		60AA05A826C68935005B2A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AA05B426C6894E005B2A74 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		60C5537F26DFB1960056BA51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60C5538426E234EA0056BA51 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		60C5538626E234F10056BA51 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		60C5538826E2351D0056BA51 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		60C5538A26E2359F0056BA51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		60C5538C26E236630056BA51 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		60C5539026E245B40056BA51 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Bookie/View/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		60C5539426E247370056BA51 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Bookie/View/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		60C5539A26E267DA0056BA51 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangePasswordViewController.swift; path = Bookie/View/ChangePasswordViewController.swift; sourceTree = SOURCE_ROOT; };
+		60C5539C26E267E00056BA51 /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
+		60C5539E26E2E5870056BA51 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		60C553A026E2ED2A0056BA51 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
+		60C553A226E3A57E0056BA51 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		60C553E926E43A820056BA51 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		60C553EC26E44A0E0056BA51 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		60C553EE26E4514D0056BA51 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		60C553F226E825160056BA51 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibraryViewController.swift; path = Bookie/Controllers/LibraryViewController.swift; sourceTree = SOURCE_ROOT; };
+		60C553F426E96D510056BA51 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		60C553F626EA9B780056BA51 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		94521FE85F23DBB8B5D40E4F /* Pods_Bookie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4598839E0AF1E0945A2B656 /* Pods-Bookie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookie.debug.xcconfig"; path = "Target Support Files/Pods-Bookie/Pods-Bookie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D245C3C59D2A57595EBD69 /* Pods_Bookie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ECA868942518C9FE1283181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4598839E0AF1E0945A2B656 /* Pods-Bookie.debug.xcconfig */,
+				3BA7771B9E37A5BB1C40EABD /* Pods-Bookie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		60AA057826C68933005B2A74 = {
 			isa = PBXGroup;
 			children = (
 				60AA058326C68933005B2A74 /* Bookie */,
-				60AA059A26C68935005B2A74 /* BookieTests */,
-				60AA05A526C68935005B2A74 /* BookieUITests */,
 				60AA058226C68933005B2A74 /* Products */,
+				1ECA868942518C9FE1283181 /* Pods */,
+				6F647D25C6C0492B13283549 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,31 +149,73 @@
 			children = (
 				60AA058426C68933005B2A74 /* AppDelegate.swift */,
 				60AA058626C68933005B2A74 /* SceneDelegate.swift */,
-				60AA058826C68933005B2A74 /* ViewController.swift */,
-				60AA058A26C68933005B2A74 /* Main.storyboard */,
+				60C5538326E234190056BA51 /* Model */,
+				60C5538126E2340C0056BA51 /* View */,
+				60C5538226E234130056BA51 /* Controllers */,
 				60AA058D26C68935005B2A74 /* Assets.xcassets */,
-				60AA058F26C68935005B2A74 /* LaunchScreen.storyboard */,
 				60AA059226C68935005B2A74 /* Info.plist */,
+				60C5537F26DFB1960056BA51 /* GoogleService-Info.plist */,
 			);
 			path = Bookie;
 			sourceTree = "<group>";
 		};
-		60AA059A26C68935005B2A74 /* BookieTests */ = {
+		60C5538126E2340C0056BA51 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				60AA059B26C68935005B2A74 /* BookieTests.swift */,
-				60AA059D26C68935005B2A74 /* Info.plist */,
+				60AA058F26C68935005B2A74 /* LaunchScreen.storyboard */,
+				60AA058A26C68933005B2A74 /* Main.storyboard */,
+				60C553E926E43A820056BA51 /* BookCell.xib */,
 			);
-			path = BookieTests;
+			path = View;
 			sourceTree = "<group>";
 		};
-		60AA05A526C68935005B2A74 /* BookieUITests */ = {
+		60C5538226E234130056BA51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				60AA05A626C68935005B2A74 /* BookieUITests.swift */,
-				60AA05A826C68935005B2A74 /* Info.plist */,
+				60AA058826C68933005B2A74 /* WelcomeViewController.swift */,
+				60C5538626E234F10056BA51 /* SignUpViewController.swift */,
+				60C5538426E234EA0056BA51 /* SignInViewController.swift */,
+				60C5538826E2351D0056BA51 /* ForgotPasswordViewController.swift */,
+				60C5539026E245B40056BA51 /* HomeViewController.swift */,
+				60C553A226E3A57E0056BA51 /* BookCell.swift */,
+				60C553F426E96D510056BA51 /* BookDetailViewController.swift */,
+				60C553F226E825160056BA51 /* LibraryViewController.swift */,
+				60C553F626EA9B780056BA51 /* ListDetailViewController.swift */,
+				60C5539426E247370056BA51 /* SettingsViewController.swift */,
+				60C5539C26E267E00056BA51 /* ChangeUsernameViewController.swift */,
+				60C5539A26E267DA0056BA51 /* ChangePasswordViewController.swift */,
 			);
-			path = BookieUITests;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60C5538326E234190056BA51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60C553F826EABC740056BA51 /* Data */,
+				60C5538A26E2359F0056BA51 /* Constants.swift */,
+				60AA05B426C6894E005B2A74 /* Session.swift */,
+				60C553A026E2ED2A0056BA51 /* BookManager.swift */,
+				60C553EC26E44A0E0056BA51 /* ApiKey.swift */,
+				60C5538C26E236630056BA51 /* Alert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60C553F826EABC740056BA51 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				60C5539E26E2E5870056BA51 /* BookData.swift */,
+				60C553EE26E4514D0056BA51 /* Book.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6F647D25C6C0492B13283549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94521FE85F23DBB8B5D40E4F /* Pods_Bookie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AA05AB26C68935005B2A74 /* Build configuration list for PBXNativeTarget "Bookie" */;
 			buildPhases = (
+				6A2DD0A5951E567F9DDA4B98 /* [CP] Check Pods Manifest.lock */,
 				60AA057D26C68933005B2A74 /* Sources */,
 				60AA057E26C68933005B2A74 /* Frameworks */,
 				60AA057F26C68933005B2A74 /* Resources */,
+				CD12BF796CEB7E4334250A31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AA059126C68935005B2A74 /* LaunchScreen.storyboard in Resources */,
+				60C553EB26E43A820056BA51 /* BookCell.xib in Resources */,
+				60C5538026DFB1960056BA51 /* GoogleService-Info.plist in Resources */,
 				60AA058E26C68935005B2A74 /* Assets.xcassets in Resources */,
 				60AA058C26C68933005B2A74 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +347,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A2DD0A5951E567F9DDA4B98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bookie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD12BF796CEB7E4334250A31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookie/Pods-Bookie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookie/Pods-Bookie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bookie/Pods-Bookie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60AA057D26C68933005B2A74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AA058926C68933005B2A74 /* ViewController.swift in Sources */,
+				60C5538D26E236640056BA51 /* Alert.swift in Sources */,
+				60C553ED26E44A0E0056BA51 /* ApiKey.swift in Sources */,
+				60C5539D26E267E00056BA51 /* ChangeUsernameViewController.swift in Sources */,
+				60C5538726E234F10056BA51 /* SignUpViewController.swift in Sources */,
+				60C5539526E247370056BA51 /* SettingsViewController.swift in Sources */,
+				60C553A426E3A57E0056BA51 /* BookCell.swift in Sources */,
+				60C5538926E2351D0056BA51 /* ForgotPasswordViewController.swift in Sources */,
+				60AA05B526C6894E005B2A74 /* Session.swift in Sources */,
+				60AA058926C68933005B2A74 /* WelcomeViewController.swift in Sources */,
+				60C5539126E245B40056BA51 /* HomeViewController.swift in Sources */,
 				60AA058526C68933005B2A74 /* AppDelegate.swift in Sources */,
+				60C553F526E96D510056BA51 /* BookDetailViewController.swift in Sources */,
+				60C5538526E234EA0056BA51 /* SignInViewController.swift in Sources */,
+				60C553EF26E4514D0056BA51 /* Book.swift in Sources */,
+				60C5539F26E2E5870056BA51 /* BookData.swift in Sources */,
+				60C553F326E825160056BA51 /* LibraryViewController.swift in Sources */,
+				60C553A126E2ED2A0056BA51 /* BookManager.swift in Sources */,
+				60C553F726EA9B780056BA51 /* ListDetailViewController.swift in Sources */,
+				60C5539B26E267DA0056BA51 /* ChangePasswordViewController.swift in Sources */,
 				60AA058726C68933005B2A74 /* SceneDelegate.swift in Sources */,
+				60C5538B26E2359F0056BA51 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AA059C26C68935005B2A74 /* BookieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AA05A726C68935005B2A74 /* BookieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +585,7 @@
 		};
 		60AA05AC26C68935005B2A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4598839E0AF1E0945A2B656 /* Pods-Bookie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +605,7 @@
 		};
 		60AA05AD26C68935005B2A74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA7771B9E37A5BB1C40EABD /* Pods-Bookie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

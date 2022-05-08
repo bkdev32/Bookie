@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" userLabel="BookCell" customClass="BookCell" customModule="Bookie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340.5" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hsM-gC-gPc">
+                        <rect key="frame" x="10" y="10" width="326.5" height="106"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-book" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-KA-pVf" userLabel="Image">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="0Fm-gZ-T56"/>
+                                    <constraint firstAttribute="width" constant="85" id="huE-8g-yxa"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rz5-Lx-MpY">
+                                <rect key="frame" x="90" y="0.0" width="236.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gsL-cl-fCf" userLabel="Description Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="36.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The Island of Missing Trees" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQT-TW-cnV" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Elif Shafak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3j-Qe-g49" userLabel="Author">
+                                                <rect key="frame" x="0.0" y="23" width="71.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aUI-54-O1H" userLabel="Rating Stack">
+                                        <rect key="frame" x="0.0" y="66.5" width="114" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n4R-ob-bmz">
+                                                <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ry0-I5-kKu">
+                                                <rect key="frame" x="23" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mn6-7k-XbC">
+                                                <rect key="frame" x="46" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rW4-aX-Swo">
+                                                <rect key="frame" x="69" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rKf-AP-1eA">
+                                                <rect key="frame" x="92" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hsM-gC-gPc" secondAttribute="bottom" constant="10" id="9ah-wt-PO0"/>
+                    <constraint firstItem="hsM-gC-gPc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Pwn-0i-DN3"/>
+                    <constraint firstAttribute="trailing" secondItem="hsM-gC-gPc" secondAttribute="trailing" constant="4" id="mBx-sU-FLl"/>
+                    <constraint firstItem="hsM-gC-gPc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ztD-XQ-KIK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="o3j-Qe-g49" id="civ-ho-2nr"/>
+                <outlet property="bookImage" destination="4Ez-KA-pVf" id="fYJ-gZ-9bs"/>
+                <outlet property="fiveStar" destination="rKf-AP-1eA" id="LKE-Go-vfF"/>
+                <outlet property="fourStar" destination="rW4-aX-Swo" id="aaG-vJ-X8N"/>
+                <outlet property="oneStar" destination="n4R-ob-bmz" id="qzU-2K-dN1"/>
+                <outlet property="threeStar" destination="mn6-7k-XbC" id="I4T-dD-xao"/>
+                <outlet property="titleLabel" destination="KQT-TW-cnV" id="qqv-uc-aAr"/>
+                <outlet property="twoStar" destination="Ry0-I5-kKu" id="KWN-zt-H5O"/>
+            </connections>
+            <point key="canvasLocation" x="13.043478260869566" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sample-book" width="677" height="677"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
