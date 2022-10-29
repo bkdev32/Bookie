@@ -50,7 +50,6 @@ struct BookManager {
         let temp = query.replacingOccurrences(of: " ", with: "%20")
         
         if let url = URL(string: "\(mainUrl)\(temp)&key=\(apiKey)") {
-            print(url)
             let session = URLSession(configuration: .default)
             session.dataTask(with: url) { data, response, err in
                 if let error = err {

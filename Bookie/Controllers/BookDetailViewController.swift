@@ -9,7 +9,6 @@ import UIKit
 import SDWebImage
 
 class BookDetailViewController: UITableViewController {
-    
     @IBOutlet weak var bookImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
