@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6079AE8F2910945C005B1401 /* Books.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6079AE8D2910945C005B1401 /* Books.xcdatamodeld */; };
 		60AA058526C68933005B2A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058426C68933005B2A74 /* AppDelegate.swift */; };
 		60AA058726C68933005B2A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058626C68933005B2A74 /* SceneDelegate.swift */; };
 		60AA058926C68933005B2A74 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA058826C68933005B2A74 /* WelcomeViewController.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		3BA7771B9E37A5BB1C40EABD /* Pods-Bookie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookie.release.xcconfig"; path = "Target Support Files/Pods-Bookie/Pods-Bookie.release.xcconfig"; sourceTree = "<group>"; };
+		6079AE8E2910945C005B1401 /* UserBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserBooks.xcdatamodel; sourceTree = "<group>"; };
 		60AA058126C68933005B2A74 /* Bookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA058426C68933005B2A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AA058626C68933005B2A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,9 +180,9 @@
 				60C5538826E2351D0056BA51 /* ForgotPasswordViewController.swift */,
 				60C5539026E245B40056BA51 /* HomeViewController.swift */,
 				60C553A226E3A57E0056BA51 /* BookCell.swift */,
-				60C553F426E96D510056BA51 /* BookDetailViewController.swift */,
 				60C553F226E825160056BA51 /* LibraryViewController.swift */,
 				60C553F626EA9B780056BA51 /* ListDetailViewController.swift */,
+				60C553F426E96D510056BA51 /* BookDetailViewController.swift */,
 				60C5539426E247370056BA51 /* SettingsViewController.swift */,
 				60C5539C26E267E00056BA51 /* ChangeUsernameViewController.swift */,
 				60C5539A26E267DA0056BA51 /* ChangePasswordViewController.swift */,
@@ -206,6 +208,7 @@
 			children = (
 				60C5539E26E2E5870056BA51 /* BookData.swift */,
 				60C553EE26E4514D0056BA51 /* Book.swift */,
+				6079AE8D2910945C005B1401 /* Books.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			files = (
 				60C5538D26E236640056BA51 /* Alert.swift in Sources */,
 				60C553ED26E44A0E0056BA51 /* ApiKey.swift in Sources */,
+				6079AE8F2910945C005B1401 /* Books.xcdatamodeld in Sources */,
 				60C5539D26E267E00056BA51 /* ChangeUsernameViewController.swift in Sources */,
 				60C5538726E234F10056BA51 /* SignUpViewController.swift in Sources */,
 				60C5539526E247370056BA51 /* SettingsViewController.swift in Sources */,
@@ -747,6 +751,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6079AE8D2910945C005B1401 /* Books.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6079AE8E2910945C005B1401 /* UserBooks.xcdatamodel */,
+			);
+			currentVersion = 6079AE8E2910945C005B1401 /* UserBooks.xcdatamodel */;
+			path = Books.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60AA057926C68933005B2A74 /* Project object */;
 }

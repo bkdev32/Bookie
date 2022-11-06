@@ -10,7 +10,6 @@ import SDWebImage
 
 class HomeViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
-
     var bookManager = BookManager()
     var books = [Book]()
     
@@ -28,7 +27,6 @@ class HomeViewController: UITableViewController {
 }
 
 // MARK: - SEARCH BAR
-
 extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         bookManager.fetchBooks(with: searchBar.text!)
@@ -39,7 +37,6 @@ extension HomeViewController: UISearchBarDelegate {
 }
 
 // MARK: - BookManager
-
 extension HomeViewController: BookManagerDelegate {
     func didAddToList() {}
     
@@ -58,7 +55,6 @@ extension HomeViewController: BookManagerDelegate {
 }
 
 // MARK: - TableView
-
 extension HomeViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books.count
@@ -71,7 +67,21 @@ extension HomeViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! BookDetailViewController
         if let index = tableView.indexPathForSelectedRow {
-            let book = Book(id: books[index.row].id, title: books[index.row].title, authors: books[index.row].authors, date: books[index.row].date, desc: books[index.row].desc, categories: books[index.row].categories, pageCount: books[index.row].pageCount, rating: books[index.row].rating, link: books[index.row].link, image: books[index.row].image, smallImage: books[index.row].smallImage)
+            let book = Book(
+                addedBy: books[index.row].addedBy,
+                status: books[index.row].status,
+                id: books[index.row].id,
+                title: books[index.row].title,
+                authors: books[index.row].authors,
+                date: books[index.row].date,
+                desc: books[index.row].desc,
+                categories: books[index.row].categories,
+                pageCount: books[index.row].pageCount,
+                rating: books[index.row].rating,
+                link: books[index.row].link,
+                image: books[index.row].image,
+                smallImage: books[index.row].smallImage
+            )
             destination.book = book
         }
     }

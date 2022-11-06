@@ -25,10 +25,12 @@ enum B {
         public static let toListDetail = "toListDetailVC"
     }
     enum Fire {
+        public static let collection = "Books"
         public static let wantToRead = "Want To Read"
         public static let read = "Read"
         public static let currentlyReading = "Currently Reading"
         public static let addedBy = "addedBy"
+        public static let status = "status"
         public static let id = "id"
         public static let title = "title"
         public static let authors = "authors"

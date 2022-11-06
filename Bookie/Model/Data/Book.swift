@@ -9,6 +9,7 @@ import Foundation
 
 struct Book {
     let addedBy: String
+    let status: String
     let id: String
     let title: String
     let authors: [String]
@@ -21,8 +22,9 @@ struct Book {
     let image: String
     let smallImage: String
     
-    init(addedBy: String = "", id: String = "", title: String = "", authors: [String] = [""], date: String = "", desc: String = "", categories: [String] = [""], pageCount: Int = 0, rating: Double = 0.0, link: String = "", image: String = "", smallImage: String = "" ) {
+    init(addedBy: String = "", status: String = "", id: String = "", title: String = "", authors: [String] = [""], date: String = "", desc: String = "", categories: [String] = [""], pageCount: Int = 0, rating: Double = 0.0, link: String = "", image: String = "", smallImage: String = "" ) {
         self.addedBy = addedBy
+        self.status = status
         self.id = id
         self.title = title
         self.authors = authors

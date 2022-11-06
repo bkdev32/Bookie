@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import CoreData
 
 protocol BookManagerDelegate {
     func didFetchBooks(manager: BookManager, books: [Book])
@@ -14,15 +15,74 @@ protocol BookManagerDelegate {
     func didAddToList()
 }
 
-struct BookManager {
+class BookManager {
     var delegate: BookManagerDelegate?
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let session = Session()
+    var books_CoreData = [Books]()
     
+    // MARK: - Core Data
+    private func loadBooks(with request: NSFetchRequest<Books> = Books.fetchRequest()) {
+        do {
+            books_CoreData = try context.fetch(request)
+        } catch {
+            print("Error loading the books \(error)")
+        }
+    }
+    
+    private func saveContext() {
+        do {
+            try context.save()
+        } catch {
+            print("Error saving to core data \(error)")
+        }
+    }
+    
+    private func saveBook(_ book: Book) {
+        let newBook = Books(context: self.context)
+        newBook.id = book.id
+        newBook.status = book.status
+        self.books_CoreData.append(newBook)
+        saveContext()
+    }
+    
+    private func updateBook(_ book: Book) {
+        let updatedBook = Books(context: self.context)
+        updatedBook.id = book.id
+        updatedBook.status = book.status
+        saveContext()
+    }
+    
+    private func removeBook(_ book: Book) {
+        loadBooks()
+        for book in books_CoreData {
+            if book.id == book.id {
+                context.delete(book)
+                saveContext()
+            }
+        }
+    }
+    
+    func checkBook(with id: String) -> Bool {
+        var isOnTheList = false
+        loadBooks()
+        for book in books_CoreData {
+            if book.id == id {
+                isOnTheList = true
+            } else {
+                isOnTheList = false
+            }
+        }
+        return isOnTheList
+    }
+    
+    // MARK: - Firebase
     func addToList(book: Book, to list: String) {
         guard let currentUser = session.user?.uid else { return }
         
         let newBook = [
             B.Fire.addedBy : currentUser,
+            B.Fire.status : list,
             B.Fire.id : book.id,
             B.Fire.title : book.title,
             B.Fire.authors : book.authors,
@@ -36,13 +96,37 @@ struct BookManager {
             B.Fire.smallImage : book.smallImage,
         ] as [String : Any]
         
-        session.db.collection(list).addDocument(data: newBook) { err in
-            if let error = err {
-                delegate?.didFailWithError(error: error)
+        saveBook(book)
+        session.db.collection(B.Fire.collection).document(book.id).setData(newBook) { err in
+            if let err = err {
+                self.delegate?.didFailWithError(error: err)
             } else {
-                delegate?.didAddToList()
+                self.delegate?.didAddToList()
             }
         }
+    }
+    
+    func removeFromList(_ book: Book) {
+        session.db.collection(B.Fire.collection).document(book.id).delete() { err in
+            if let err = err {
+                print("Error removing the book from the list \(err)")
+            } else {
+                self.removeBook(book)
+                print("Book removed from the list")
+            }
+        }
+    }
+    
+    func updateTheList(book: Book, list: String) {
+        session.db.collection(B.Fire.collection).document(book.id)
+            .updateData([B.Fire.status : list]) { err in
+                if let err = err {
+                    self.delegate?.didFailWithError(error: err)
+                } else {
+                    self.updateBook(book)
+                    self.delegate?.didAddToList()
+                }
+            }
     }
     
     func fetchBooks(with query: String) {
@@ -53,12 +137,12 @@ struct BookManager {
             let session = URLSession(configuration: .default)
             session.dataTask(with: url) { data, response, err in
                 if let error = err {
-                    delegate?.didFailWithError(error: error)
+                    self.delegate?.didFailWithError(error: error)
                     print(error)
                 } else {
                     if let safeData = data {
-                        if let decodedBooks = parseData(safeData) {
-                            delegate?.didFetchBooks(manager: self, books: decodedBooks)
+                        if let decodedBooks = self.parseData(safeData) {
+                            self.delegate?.didFetchBooks(manager: self, books: decodedBooks)
                         }
                     }
                 }
