@@ -1,6 +1,5 @@
 # 📚 Bookie
 
-
 This app allows users to search for different books, add them to different lists (Currently Reading, Read, Want to Read). I have used Google Books API to be able to perform searches and retrieve information.
 
 The data is saved online using Firebase and persisted locally to allow offline access.
@@ -10,6 +9,8 @@ I have used Firebase Authentication to allow users to sign up/log in. The books 
 
 I wanted to use some of the views twice without creating separate storyboards and as part of this, I have set up a simple Core Data model to persist saved book ids in order to update UI accordingly. For example, if a user is viewing a book already saved to their list, the BookDetailVieController will update and show them with two buttons to either remove from or update the list.
   
+![bookie](https://user-images.githubusercontent.com/11230240/200288378-b90b5955-f889-40c3-91d5-b7d88abfbbd2.gif)
+
 
 ## Project Setup
 
